@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading, Paragraph and Emmet</title>
+</head>
+<body>
+
+    <!-- HEADINGS -->
+    <!-- there are 6 heading tags in HTML -->
+    <h1>First</h1>
+    <h2>Second</h2>
+    <h3>Third</h3>
+    <h4>Fourth</h4>
+    <h5>Fifth</h5>
+    <h6>Sixth</h6>
+    <!-- if you use h7 and above heading tags it is normally function as paragraph tag -->
+    <h7>Seventh</h7>
+    <h8>Eightth</h8>
+
+    <!-- PARAGRAPH tag -->
+    <p>First paragraph</p>
+    <!-- to have any by default content in paragraph then take p tag and in that write Lorem(number of words) like Lorem4-->
+    <p>Lorem ipsum dolor sit.</p>
+    <!-- for word wrap use short cut=> alt+Z -->
+    <p>Lorem ipsum dolor sit amet <strong>This is strong tags used for bolding the word(s)</strong> consectetur, adipisicing elit. Officiis, <em>This is emphasized tags used for giving the different style to the word(s)</em> asperiores mollitia. Maiores autem blanditiis dolorem, optio tenetur alias saepe aspernatur nam ratione sapiente eaque exercitationem iusto quo consequatur? Temporibus exercitationem in, quas distinctio rerum perferendis soluta magni itaque alias. Sunt!</p>
+    <p>This is first para. This is second para.</p>
+    <!-- hr tags is used to give horizontal line in the page -->
+    <hr>
+    <!-- br tag is used to break the line. This is self close tag -->
+    <p>This is first para. <br> This is second para.</p>
+
+    <!-- u,b,i,strong,em,s tags are used for highlighting in there manners -->
+    <p>The <u>queen of flowers</u>, <b>rose</b> is very <i>beautiful and attractive</i>. It grows in different colours like <strong>red, white, yellow, pink and other varieties</strong>. Small thorns on the stem protect the plant. In the world of <em>art, poetry and literature</em>, rose has been glorified as a <u><i>symbol of love, compassion and eternal beauty</i></u>. So it is one of the most <s>commonly</s> used flowers when gifting a bouquet or decorating a space with floral arrangements.</p><br>
+    <!-- for power of something like 2 to the power 5-->
+    <p>2<sup>5</sup></p>
+    <!-- for writing subscript of something like chemical formula of water is H2O -->
+    <p>H<sub>2</sub>O</p>
+    <!-- pre tags will show the output as it is written in code -->
+    <pre>
+My name is
+        Priya Gupta.
+    I am a girl.
+    </pre>
+</body>
+</html>
+
+    <!-- EMMETS -->
+    <!-- Ctrl+/ =>for commenting any line -->
+    <!-- Alt+Z =>for word wrapping -->
+    <!-- Ctrl+Enter =>to jump in next line without disturbing another line -->
+    <!-- using of EMMET abrivation; this will help in coding speedly using shortcut -->
+    <!-- for having multiple similar tags at a same time use like in a nested form [ p>p>p +TAB ],[h1>h2>h3 +TAB ] -->
+    <p>
+        <p>
+            <p></p>
+        </p>
+    </p>
+    <h1>
+        <h2>
+            <h3></h3>
+        </h2>
+    </h1>
+    <!-- for taking one tag within another tag like [ p>h1 +TAB ],[ article>section +TAB ]-->
+    <p>
+        <h1></h1>
+    </p>
+    <article>
+        <section></section>
+    </article>
+    <!-- for taking multiple  diferent tags at a time like [ article+section +TAB ],[ p+h1 +TAB ]-->
+    <article></article>
+    <section></section>
+    <p></p>
+    <h1></h1>
+    <!-- for writing things in a tags without confusion like [ p{Write Here} +TAB ],[article{Write Here} +TAB ] -->
+    <p>I am priya</p>
+    <article>hi all</article>
+    <!-- class(like in other programing lang)(tag. +TAB like [ p. +TAB ][ p.classname.classname +TAB ]) and id(unique for each)(tag# +TAB like [ p# +TAB ] or [ p#idname +TAB ]) -->
+    <p class="DOG"></p>
+    <p class="Dog Cat"></p>
+    <p id="pug"></p>
+    <p id="billi"></p>
+    <!-- div tags is nothing but used for wrapping a big code in one container [ .classname +TAB ]-->
+    <div class="BigPara">
+        <p>
+            <p>
+                <p>
+                    <p></p>
+                </p>
+            </p>
+        </p>
+    </div>
+    <div class="smallArticle">
+        <article></article>
+        <p></p>
+        <h1>
+            <h2>
+                <h3></h3>
+            </h2>
+        </h1>
+    </div>
+</body>
+</html>
