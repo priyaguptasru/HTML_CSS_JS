@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+</head>
+<body>
+    <!-- LISTS -->
+    <!-- ul tag=>Unorderd list -->
+    <!--type attribute of ul tag=> used for type of serial number -->
+    <!-- types are disc,square,circle -->
+    <ul>
+        <li>First Default Unordered</li>
+        <li>Second Default Unordered</li>
+    </ul>
+    <ul type="circle">
+        <li>First Unordered</li>
+        <li>Second Unordered</li>
+    </ul>
+    <!-- mixed list -->
+    <ul type="square">
+        <li>First Unordered</li>
+        <ol type="i">
+            <li>Hi</li>
+            <li>Hello</li>
+        </ol>
+        <li>Second Unordered</li>
+    </ul>
+    <!-- ol tag=>Ordered list -->
+    <!-- type attribute of ol tag=> used for type of serial number -->
+    <!-- types are 1,A,a,i,I -->
+    <ol>
+        <li>First Default Ordered</li>
+        <li>Second Default Ordered</li>
+    </ol>
+    <ol type="A">
+        <li>First Ordered</li>
+        <li>Second Ordered</li>
+    </ol>
+    <ol type="I">
+        <li>First Unordered</li>
+        <ul type="square">
+            <li>Hi</li>
+            <li>Hello</li>
+        </ul>
+        <li>Second Unordered</li>
+    </ol>
+
+    <!-- TABLES -->
+    <!-- table tag=>used for making table //
+         thead tag=>used for heading part of the table //
+         th tag=>used for entering data in heading part //
+         tbody tag=>used for elements of the table // 
+         tfoot tag=>used for conclusion if any in the table //
+         tr tag=>used for rows of the table //
+         td tag=>used for data of the table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Emp ID</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Priya</td>
+                <td>11</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Piyush</td>
+                <td>12</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Mrityunjay</td>
+                <td>13</td>
+                <td>Manager</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 AM</td>
+                <td rowspan="2">5:00 PM</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity. DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 AM</td>
+                <td>11: 00 AM</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>2:00 PM</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>5:00 PM</td>
+                <td>XSL Transformation</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
