@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+
+    <!--This is Internal CSS -->
+    <!--Internal CSS can be written in head tag only -->
+    <style>
+        p{
+            color: aqua;
+            background-color: darkblue;
+        }
+    </style>
+    <style>
+        p{
+            color: red;
+            background-color: burlywood !important;
+        }
+    </style>
+
+     <!-- This is External CSS -->
+    <!-- External CSS can be written in another sheet and then attach here -->
+    <link rel="stylesheet" href="tut14.css">
+</head>
+<body>
+    <p>This is paragraph</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ratione.</p>
+
+    <!-- This is Inline CSS -->
+    <!-- Inline CSS can be written within tags only-->
+    <!-- <p style="color: antiquewhite; background-color: brown;">This is Inline CSS</p> -->
+
+    <!-- Inline CSS has more priority than Internal and External CSS -->
+    <!-- Within Internal and External CSS, that is more priortize which is written down of the above -->
+    <!-- The CSS which is written at last within all three, takes most priority and the changes will reflect according to that but to give the priority to upper CSS, we have to mark that as a important-->
+</body>
+</html>
