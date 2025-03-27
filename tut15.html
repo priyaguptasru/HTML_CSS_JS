@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+    /* Element selector */
+    p{
+        border: 2px solid red;
+    }   
+
+    /* ID selector */
+    #firstpara{
+        background-color: burlywood;
+    }
+
+    /* Class selector */
+    .paras{
+        font-size: medium;
+        font-style: oblique;
+        color: palegoldenrod;
+        background-color: purple;
+    }
+
+    .thirdpara{
+        color: palegoldenrod;
+        background-color: green;
+    }
+
+    /* Group selector */
+    #fifthpara, span, footer{
+        color: goldenrod;
+        background-color: brown;
+        font-family: monospace;
+        font-style: inherit;
+    }
+    </style>
+</head>
+<body>
+    <p id="firstpara">This is first paragraph.</p>
+    <p class="paras">This is second paragraph.</p>
+    <p id="thirdpara" class="thirdpara">This is third paragraph.</p>
+    <div><p id="fourthpara" class="paras">This is fourth paragraph.</p></div>
+    <p id="fifthpara">This is fifth paragraph</p>
+    <span>This is span</span>
+</body>
+<footer>This is footer</footer>
+</html>
