@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project- Gym Site</title>
+</head>
+<style>
+    /* CSS reset */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('tut26img/tut26bg.jpg');
+        background-size:100%;
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .left tut26img{
+        width: 20px;
+        filter: invert(100%);
+    }
+    .left div{
+        line-height: 15px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .mid{
+        /* border: 2px solid green; */
+        display: block;
+        width: 55%;
+        margin: 10px auto;
+    }
+    .right{
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 17px;
+    }
+    .navbar li a:hover,
+    .navbar li a:active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 5px;
+        background-color: black;
+        color: white;
+        padding: 2px 8px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 1px solid white;
+        margin: 100px 80px;
+        padding:  75px;
+        width: 25%;
+        border-radius: 20px;
+    }
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 1px;
+        border: 1px solid black;
+        margin: 6px auto;
+        font-size: 15px;
+        border-radius: 4px;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+        <!-- left box for logo -->
+        <img src="tut26img/tut26logo.jpg" alt="">
+        <div>MY  FITNESS</div>
+        </div>
+        <div class="mid">
+        <!-- middle box for navbar -->
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="right">
+        <!-- right box for buttons -->
+        <button class="btn"><a href="mailto:priyaguptasru@gmail.com">Email Us</a></button>
+        <button class="btn"><a href="tel:7458821544">Call Us</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Register Now</h3>
+        <form action="noaction.php">
+            <!-- <div class="form-group"><input type="text" name="" placeholder="Enter your Gender"></div> -->
+            <div>Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other<input type="radio" name="myGender"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Name"></div>
+            <div class="form-group"><input type="number" name="" placeholder="Enter your Age"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Locality"></div>
+            <div class="form-group"><input type="email" name="" placeholder="Enter your Email ID"></div>
+            <div class="form-group"><input type="number" name="" placeholder="Enter your Phone Number"></div>
+            <button class=" btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
